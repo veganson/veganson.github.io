@@ -1,0 +1,34 @@
+footer {
+    margin-top: 53px;
+    text-align: right;
+    border-top: 1px #e5e5e5 solid;
+    color: #777;
+}
+
+footer .column {
+    padding: 10px 10px 20px 0;
+}
+
+.socBtn {
+    display: inline-block;
+}
+
+.socBtn > div {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    color: rgba(255,255,255,.8);
+}
+
+.btnFacebook {
+    background-color: #3c599f;
+}
+
+.btnTwitter {
+    background-color: #32ccfe;
+    margin: 0 0 10px 10px;
+}

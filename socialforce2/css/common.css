@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.woff2');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lobster.woff2') format('woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #303030;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.btnSignIn {
+    padding: 6px 12px;
+    color: #e5e5e5;
+}
+
+.btnSignIn:hover {
+    color: white;
+}
+
+.btnSignUp {
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #00b22d;
+    border: 1px solid #308530;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.btnSignUp:hover {
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.btnSignUp:active {
+    background-color: #53cb53;
+    border-color: #35c350;
+}
+
+.topColumn {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1010px;
+}
+
+.column {
+    margin: 0 auto;
+    padding: 32px 10px;
+    max-width: 950px;
+}
+
+nav ul {
+    border-bottom: 1px #ddd solid;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.929em;
+}
+
+nav ul > li {
+    display: inline-block;
+    padding: 0 5px;
+    line-height: 30px;
+}
+
+nav a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+nav a:hover {
+    color: #018823;
+    text-shadow: 0 0 2px #00b22d;
+}
+
+.flex {
+    display: flex;
+}
+
+.sb {
+    justify-content: space-between;
+}
+
+.sa {
+    justify-content: space-around;
+}
+
+.whiteline {
+    background-color: #FFF;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.fa-rocket:before {
+    content: "\f135"
+}
+
+.fa-search:before {
+    content: "\f002"
+}
+
+.fa-facebook:before {
+    content: "\f09a"
+}
+
+.fa-twitter:before {
+    content: "\f099"
+}
+
+@media only screen
+    and (max-width: 1080px)
+    and (orientation: portrait) {
+
+        .topColumn {
+            padding: 0 10px;
+        }
+}
