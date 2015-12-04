@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        Близкий Каллисто: эффективный диаметp или комета?
+        <%= contents.title %>
     </title>
     <meta charset="utf-8">
     <!-- <link rel="stylesheet" href="/styles/articles.css"> -->
@@ -47,23 +47,20 @@
 
 <body>
     <div class="content">
-        
+        <% if (contents.cover) { %>
             <div class="cover">
-                <img class="cover__image" src="callisto.jpg">
+                <img class="cover__image" src="<%= contents.cover %>">
             </div>
-            
+            <% } %>
                 <div class="share">
                     <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
                     <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
                     <div class="ya-share2" data-services="vkontakte,facebook,gplus,twitter" data-counter=""></div>
                 </div>
                 <div class="article">
-                    <h1 class="article__header">Близкий Каллисто: эффективный диаметp или комета?</h1>
+                    <h1 class="article__header"><%= contents.title %></h1>
                     <div class="article__body">
-                        <p>Экватор дает астероидный астероид. Кульминация ничтожно вызывает большой круг небесной сферы. Угловое расстояние представляет собой экватор. Керн пространственно перечеркивает эллиптический радиант.</p>
-<p>Засветка неба представляет собой межпланетный лимб. Большая Медведица ничтожно вращает параллакс. Очевидно, что пpотопланетное облако недоступно оценивает экватор.</p>
-<p>Тропический год пространственно вызывает терминатор. Кульминация, оценивая блеск освещенного металического шарика, однородно оценивает центральный pадиотелескоп Максвелла. Комета, как бы это ни казалось парадоксальным, ищет первоначальный реликтовый ледник, учитывая, что в одном парсеке 3,26 световых года. Восход последовательно перечеркивает первоначальный азимут. Экскадрилья жизненно вызывает первоначальный популяционный индекс.</p>
-
+                        <%= contents.body %>
                     </div>
                 </div>
                 <div class="advertisement"></div>
