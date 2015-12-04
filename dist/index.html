@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Блог</title>
+    <meta charset="utf-8">
+    <!-- <link rel="stylesheet" href="/styles/index.css"> -->
+    <style type="text/css">
+        .content {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 20px;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Статьи</h1>
+        <ol>
+            <li><a href="/articles/1">Раз</a></li>
+            <li><a href="/articles/2">Два</a></li>
+            <li><a href="/articles/3">Три</a></li>
+            <li><a href="/articles/4">Четыре</a></li>
+            <li><a href="/articles/5">Пять</a></li>
+            <li><a href="/articles/6">Шесть</a></li>
+        </ol>
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            document.head.innerHTML += [
+                    '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700itali&subset=latin,cyrillic">',
+                    '<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=latin,cyrillic">',
+                    '<link rel="stylesheet" href="articles.css">'
+                ].join('');
+        });
+
+        window.addEventListener('load', function() {
+            var script = document.createElement('script');
+            script.src = 'ads/ads.js';
+            document.body.appendChild(script);
+        });
+    </script>
+
+</body>
+
+</html>
