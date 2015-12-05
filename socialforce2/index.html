@@ -70,10 +70,10 @@
                         <h3>U nas zaebis</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eius cupiditate quos, animi voluptatibus iste eos quisquam, quia asperiores at cum officia recusandae esse? Repellat corrupti sint maiores omnis est.</p>
                     </div>
-                    <img src="http://themes.supview.co/flading/flading-flat/img/service2.png" alt="">
+                    <img src="img/benefit-3.png" alt="">
                 </section>
                 <section class='benefit flex sb'>
-                    <img src="http://themes.supview.co/flading/flading-flat/img/service1.png" alt="">
+                    <img src="img/benefit-1.png" alt="">
                     <div>
                         <h3>Mi ne platim</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias reiciendis excepturi omnis voluptas ad aliquid obcaecati quo. Hic quasi odit, optio impedit saepe commodi voluptatum quia minima, aliquid ipsam labore.</p>
@@ -84,7 +84,7 @@
                         <h3>Idi naxui</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vel a et quasi, enim repellat. Quisquam ducimus, eos provident aperiam, nihil, odio reprehenderit veniam numquam mollitia dolorum ullam fugiat vitae.</p>
                     </div>
-                    <img src="http://themes.supview.co/flading/flading-flat/img/service3.png" alt="">
+                    <img src="img/benefit-2.png" alt="">
                 </section>
             </div>
         </div>
@@ -172,9 +172,16 @@
     </div>
     <script src='js/script.js'></script>
     <script>
+        var counter = 0;
         $('.feedback-link').on('click', function (i) {
             i.preventDefault();
             $('.modal-dialog').toggleClass('popped');
+        });
+        $('.row.overview').on('click', function(){
+            $('.row.overview').attr("class","row overview bg" + ++counter);
+            if(counter == 12) {
+                counter = 0;
+            }
         })
     </script>
 </body>

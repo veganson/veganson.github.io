@@ -46,8 +46,57 @@ main {
 }
 
 .overview {
+    background-color: black;
     background-image: url('../img/overview-bg.jpg');
     color: white;
+}
+
+.overview.bg1 {
+    background-image: url('../img/footer_lodyas.png');
+}
+
+.overview.bg2 {
+    background-image: url('../img/bg/burried.png');
+}
+
+.overview.bg3 {
+    background-image: url('../img/bg/cartographer.png');
+}
+
+.overview.bg4 {
+    background-image: url('../img/bg/congruent_outline.png');
+}
+
+.overview.bg5 {
+    background-image: url('../img/bg/dark_geometric.png');
+}
+
+.overview.bg6 {
+    background-image: url('../img/bg/escheresque_ste.png');
+}
+
+.overview.bg7 {
+    background-image: url('../img/bg/escheresque_ste.png');
+}
+
+.overview.bg8 {
+    background-image: url('../img/bg/footer_lodyas.png');
+}
+
+.overview.bg9 {
+    background-image: url('../img/bg/hexabump.png');
+}
+
+.overview.bg10 {
+    background-image: url('../img/bg/hixs_pattern_evolution.png');
+}
+
+.overview.bg11 {
+    background-image: url('../img/bg/stressed_linen.png');
+}
+
+.overview.bg12 {
+    background-image: url('../img/bg/tasky_pattern.png');
 }
 
 .overview .column {
@@ -67,17 +116,16 @@ main {
     width: 50%;
 }
 
+.overview .column > img {
+    max-width: 1090px;
+}
+
 .overview .btnSignUp {
     margin: 14px 0;
     padding: 10px 16px;
     display: inline-block;
     border-radius: 6px;
     font-size: 1.286em
-}
-
-.info .column > img {
-    width: 100%;
-    max-width: 1090px;
 }
 
 .benefit {
@@ -183,7 +231,7 @@ input[name="feedback_email"] {
     and (max-width: 1080px)
     and (orientation: portrait) {
         
-        .overview .column > img {
+        .overview .column > * {
             width: 100%;
         }
         
