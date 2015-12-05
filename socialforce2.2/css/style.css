@@ -3,7 +3,7 @@
 @import url('common.css');
 
 body {
-    background-color: #F7F7F7;
+    background-color: #D0D0D0;
     color: #647385;
     font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 14px;
@@ -37,6 +37,8 @@ main .column {
     text-align: center;
 }
 
+
+
 .topColumn > div {
     display: inline-block;
 }
@@ -45,26 +47,21 @@ main {
     margin-bottom: -52px;
 }
 
+
 .overview {
     background-image: url('../img/overview-bg.jpg');
     color: white;
 }
 
 .overview .column {
-/*    padding: 45px 0;*/
-    padding-bottom: 0;
-    text-align: left;
+    padding: 45px 0;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-}
-
-.overview .column > * {
-    width: 50%;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
 }
 
 .overview .btnSignUp {
@@ -74,6 +71,32 @@ main {
     border-radius: 6px;
     font-size: 1.286em
 }
+
+.info {
+    background: -webkit-radial-gradient(#7B7B7B, #2B2B2B);
+    background: radial-gradient(#7B7B7B, #2B2B2B);
+}
+
+.info h2 {
+    color: #00A129;
+    text-shadow: 0 0 20px #00A129;
+}
+
+
+.info .column {
+    padding-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+/*
+.info h2 {
+    color: #333;
+}
+*/
 
 .info .column > img {
     width: 100%;
@@ -182,10 +205,6 @@ input[name="feedback_email"] {
 @media only screen
     and (max-width: 1080px)
     and (orientation: portrait) {
-        
-        .overview .column > img {
-            width: 100%;
-        }
         
         .benefit {
             -webkit-box-orient: vertical;

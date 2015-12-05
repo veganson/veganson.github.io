@@ -51,20 +51,14 @@ main {
 }
 
 .overview .column {
-/*    padding: 45px 0;*/
-    padding-bottom: 0;
-    text-align: left;
+    padding: 45px 0;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-}
-
-.overview .column > * {
-    width: 50%;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
 }
 
 .overview .btnSignUp {
@@ -73,6 +67,24 @@ main {
     display: inline-block;
     border-radius: 6px;
     font-size: 1.286em
+}
+
+.info {
+    background: -webkit-radial-gradient(at bottom, #848484, white 72%);
+    background: radial-gradient(at bottom, #848484, white 72%);
+}
+
+.info .column {
+    padding-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.info h2 {
+    color: #484848;
 }
 
 .info .column > img {
@@ -182,10 +194,6 @@ input[name="feedback_email"] {
 @media only screen
     and (max-width: 1080px)
     and (orientation: portrait) {
-        
-        .overview .column > img {
-            width: 100%;
-        }
         
         .benefit {
             -webkit-box-orient: vertical;
