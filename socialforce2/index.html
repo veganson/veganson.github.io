@@ -106,11 +106,11 @@
 
             <div>
                 <div class="feedback-type">
-                    <a href="#" data-value="idea" class="active">Idea</a>
-                    <a href="#" data-value="problem">Problem</a>
-                    <a href="#" data-value="question">Question</a>
-                    <a href="#" data-value="praise">Praise</a>
-                    <a href="#" data-value="sales">Sales</a>
+                    <a href="#" data-value="idea" class="active"><i class="fa fa-lightbulb-o"></i>Idea</a>
+                    <a href="#" data-value="problem"><i class="fa fa-bug"></i>Problem</a>
+                    <a href="#" data-value="question"><i class="fa fa-question"></i>Question</a>
+                    <a href="#" data-value="praise"><i class="fa fa-heart"></i>Praise</a>
+                    <a href="#" data-value="sales"><i class="fa fa-shopping-cart"></i>Sales</a>
                 </div>
                 <input type="hidden" name="feedback_type" value="idea">
 
@@ -177,12 +177,6 @@
             i.preventDefault();
             $('.modal-dialog').toggleClass('popped');
         });
-        $('.row.overview').on('click', function(){
-            $('.row.overview').attr("class","row overview bg" + ++counter);
-            if(counter == 12) {
-                counter = 0;
-            }
-        })
     </script>
 </body>
 

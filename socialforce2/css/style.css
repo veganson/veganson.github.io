@@ -42,61 +42,13 @@ main .column {
 }
 
 main {
-    margin-bottom: -52px;
+/*    margin-bottom: -52px;*/
 }
 
 .overview {
-    background-color: black;
-    background-image: url('../img/overview-bg.jpg');
-    color: white;
-}
-
-.overview.bg1 {
-    background-image: url('../img/footer_lodyas.png');
-}
-
-.overview.bg2 {
-    background-image: url('../img/bg/burried.png');
-}
-
-.overview.bg3 {
-    background-image: url('../img/bg/cartographer.png');
-}
-
-.overview.bg4 {
+    background-color: #2a2a2a;
     background-image: url('../img/bg/congruent_outline.png');
-}
-
-.overview.bg5 {
-    background-image: url('../img/bg/dark_geometric.png');
-}
-
-.overview.bg6 {
-    background-image: url('../img/bg/escheresque_ste.png');
-}
-
-.overview.bg7 {
-    background-image: url('../img/bg/escheresque_ste.png');
-}
-
-.overview.bg8 {
-    background-image: url('../img/bg/footer_lodyas.png');
-}
-
-.overview.bg9 {
-    background-image: url('../img/bg/hexabump.png');
-}
-
-.overview.bg10 {
-    background-image: url('../img/bg/hixs_pattern_evolution.png');
-}
-
-.overview.bg11 {
-    background-image: url('../img/bg/stressed_linen.png');
-}
-
-.overview.bg12 {
-    background-image: url('../img/bg/tasky_pattern.png');
+    color: white;
 }
 
 .overview .column {
@@ -139,6 +91,9 @@ main {
 
 .benefit > img {
     max-width: 350px;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
 }
 
 .modal-dialog {
@@ -149,8 +104,8 @@ main {
     background-color: #FFF;
     width: 600px;
     border-radius: 5px;
-    -webkit-transition: all 0.7s cubic-bezier(0.28, 0.65, 0.38, 0.94);
-    transition: all 0.7s cubic-bezier(0.28, 0.65, 0.38, 0.94);
+    -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.28, 0.65, 0.38, 0.94);
+    transition: transform 0.7s cubic-bezier(0.28, 0.65, 0.38, 0.94);
 }
 
 .modal-dialog.popped {
@@ -168,9 +123,15 @@ main {
 .feedback-type > a {
     color: #00a129;
     border-radius: 4px;
-    padding: 10px 10px 7px 29px;
+    padding: 10px 10px 7px 7px;
     margin: 23px 13px 19px 0;
     display: inline-block;
+}
+
+.feedback-type .fa {
+    margin-right: 7px;
+    font-size: 1.5em;
+    vertical-align: middle;
 }
 
 .feedback-type > a.active {
@@ -211,7 +172,7 @@ input[name="feedback_email"] {
 
 .feedback-link {
     position: absolute;
-    top: 50%;
+    top: 150px;
     left: -62px;
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -225,6 +186,29 @@ input[name="feedback_email"] {
     line-height: 36px;
     font-weight: bold;
 }
+
+.fa-shopping-cart:before {
+    content: "\f07a"
+}
+
+.fa-bug:before {
+    content: "\f188"
+}
+
+.fa-lightbulb-o:before {
+    content: "\f0eb"
+}
+
+.fa-heart:before {
+    content: "\f004"
+}
+
+.fa-question:before {
+    content: "\f128"
+}
+
+
+
 
 
 @media only screen
