@@ -185,6 +185,7 @@ input[name="feedback_email"] {
     color: #fff;
     line-height: 36px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .fa-shopping-cart:before {
