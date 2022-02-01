@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-js-focus-visible>
 <head>
   <meta charset="utf-8">
   <title>WOW AR</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
-  <model-viewer src="./assets/Model.glb" shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look" camera-controls alt="A 3D model carousel">
+  <model-viewer src="./assets/Model.glb" poster="../../assets/ShopifyModels/Chair.png" shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look" camera-controls alt="A 3D model carousel" ar-status="not-presenting">
 
     <button slot="ar-button" id="ar-button">
       View in your space
@@ -30,9 +29,26 @@
       display: none;
     }
 
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
     model-viewer {
       background-color: #eee;
       overflow-x: hidden;
+      width: 100%;
+      height: 100%;
+      /* height: 100vh; */
+      /* position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0; */
       --poster-color: #eee;
     }
 
