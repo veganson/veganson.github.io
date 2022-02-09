@@ -31,10 +31,15 @@
 
       <a-text
         value="text 3"
-        look-at="[gps-camera]"
         scale="1 1 1"
         gps-entity-place="latitude: 20.613918; longitude: -105.229648;"
       ></a-text>
+
+      <a-assets>
+        <a-asset-item id="tree" src="/assets/mammoth.gltf"></a-asset-item>
+      </a-assets>
+
+      <a-entity gltf-model="#tree" gps-entity-place="latitude: 20.613918; longitude: -105.229648;"></a-entity>
 
       <a-camera gps-camera="gpsMinDistance: 5" rotation-reader> </a-camera>
     </a-scene>
