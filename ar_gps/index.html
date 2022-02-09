@@ -16,48 +16,82 @@
       renderer="logarithmicDepthBuffer: true;"
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-text
+      <a-entity
+        gltf-model='./assets/mammoth.gltf'
+        scale="5 5 5"
+        gps-entity-place="latitude: 50.562083; longitude: 30.697306;"
+      ></a-entity>
+
+      <!-- <a-entity
         value="Text 11."
         look-at="[gps-projected-camera]"
         scale="30 30 30"
         gps-projected-entity-place="latitude: 50.562083; longitude: 30.697306;"
-      ></a-text>
-      <a-text
+      ></a-entity> -->
+
+      <a-entity
+        gltf-model='./assets/mammoth.gltf'
+        scale="5 5 5"
+        gps-entity-place="latitude: 50.561806; longitude: 30.696588;"
+      ></a-entity>
+
+      <!-- <a-entity
         value="Text 22."
         look-at="[gps-projected-camera]"
         scale="30 30 30"
         gps-projected-entity-place="latitude: 50.561806; longitude: 30.696588;"
-      ></a-text>
-      <a-text
+      ></a-entity> -->
+
+      <a-entity
+        gltf-model='./assets/mammoth.gltf'
+        scale="5 5 5"
+        gps-projected-entity-place="latitude: 50.563066; longitude: 30.693998;"
+      ></a-entity>
+
+      <!-- <a-entity
         value="Text 33."
         look-at="[gps-projected-camera]"
         scale="30 30 30"
         gps-projected-entity-place="latitude: 50.563066; longitude: 30.693998;"
-      ></a-text>
+      ></a-entity> -->
 
       <!-- mine -->
 
-      <a-text
+      <a-entity
+        gltf-model='./assets/mammoth.gltf'
+        scale="5 5 5"
+        gps-entity-place="latitude: 20.61386735930226; longitude: -105.22958794930965;"
+      ></a-entity>
+
+      <!-- <a-entity
         value="Text 3."
         look-at="[gps-camera]"
         scale="30 30 30"
         gps-entity-place="latitude: 20.61386735930226; longitude: -105.22958794930965;"
-      ></a-text>
-      <a-text
+      ></a-entity> -->
+
+      <a-entity
+        gltf-model='./assets/mammoth.gltf'
+        scale="5 5 5"
+        gps-projected-entity-place="latitude: 20.613887; longitude: -105.229655;"
+      ></a-entity>
+
+      <!-- <a-entity
         value="Text 3."
         look-at="[gps-camera]"
         scale="30 30 30"
         gps-entity-place="latitude: 20.613887; longitude: -105.229655;"
-      ></a-text>
-      <a-text
+      ></a-entity> -->
+
+      <a-entity
         value="Text 3."
         look-at="[gps-camera]"
         scale="30 30 30"
         gps-entity-place="latitude: 20.613918; longitude: -105.229648;"
-      ></a-text>
+      ></a-entity>
 
       <a-camera look-controls-enabled='false' arjs-look-controls='smoothingFactor: 0.1' gps-projected-camera='gpsMinDistance: 0' rotation-reader> </a-camera>
-  
+
     </a-scene>
   </body>
 </html>
