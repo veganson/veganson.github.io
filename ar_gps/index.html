@@ -83,11 +83,20 @@
         gps-entity-place="latitude: 20.613887; longitude: -105.229655;"
       ></a-entity> -->
 
-      <a-entity
+      <a-text
         value="Text 3."
         scale="30 30 30"
         gps-entity-place="latitude: 20.613918; longitude: -105.229648;"
-      ></a-entity>
+      ></a-text>
+
+      <a-entity id="baseModel" scale="0.5 0.5 0.5" gps-entity-place="latitude: 20.613918; longitude: -105.229648;">
+        <a-entity rotation="0 55 0" gltf-model="#baseModel" animation-mixer shadow="cast: true; receive: false" animation-mixer></a-entity>
+        <a-plane height="30" width="30" rotation="-90 0 0" shadow="receive: true" ar-shadows="opacity: 0.2" visible="false"></a-plane>
+      </a-entity>
+
+      <a-assets>
+        <a-asset-item id="baseModel" src="./models/Model.glb" response-type="arraybuffer"></a-asset-item>
+      </a-assets>
 
       <a-camera look-controls-enabled='false' gps-camera='gpsMinDistance: 0' arjs-look-controls='smoothingFactor: 0.1' rotation-reader> </a-camera>
 
