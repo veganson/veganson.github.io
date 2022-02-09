@@ -16,22 +16,7 @@
       renderer="logarithmicDepthBuffer: true;"
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
-      <a-entity
-        scale="30 30 30"
-        gltf-model="./assets/scene.gltf"
-        gps-projected-entity-place="latitude: 50.562083; longitude: 30.697306;"
-      ></a-entity>
-      <a-nft
-            type='nft' url='https://github.com/AR-js-org/AR.js/tree/master/aframe/examples/image-tracking/nft/trex'
-            smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
-            <a-entity
-                gltf-model='./assets/scene.gltf'
-                scale="5 5 5"
-                position="150 300 100"
-                gps-projected-entity-place="latitude: 50.561806; longitude: 30.696588;"
-                >
-            </a-entity>
-        </a-nft>
+      
       <a-text
         value="Text 11."
         look-at="[gps-camera]"
