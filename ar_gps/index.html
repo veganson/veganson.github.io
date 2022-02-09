@@ -15,6 +15,10 @@
       embedded
       arjs="sourceType: webcam; debugUIEnabled: false;"
     >
+      <a-assets>
+        <a-asset-item id="tree" src="ar_gps/assets/mammoth.gltf"></a-asset-item>
+      </a-assets>
+
       <a-text
         value="text 1"
         look-at="[gps-camera]"
@@ -34,10 +38,6 @@
         scale="1 1 1"
         gps-entity-place="latitude: 20.613918; longitude: -105.229648;"
       ></a-text>
-
-      <a-assets>
-        <a-asset-item id="tree" src="/assets/mammoth.gltf"></a-asset-item>
-      </a-assets>
 
       <a-entity gltf-model="#tree" gps-entity-place="latitude: 20.613918; longitude: -105.229648;"></a-entity>
 
